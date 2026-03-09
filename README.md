@@ -71,5 +71,5 @@ For convenience, the project has been compiled into an executable file using **P
 2. Run the executable by double-clicking (if your antivirus blocks it, read the note below).
 3. The log file will be automatically created on your Desktop.
 
-> **⚠️ Note on Antivirus:** > When you first launch it, your antivirus may block the program or flag it as suspicious. This happens because the script monitors your hardware and uses a global keyboard shortcut. 
+> **⚠️ Note on Antivirus:** When you first launch it, your antivirus may block the program or flag it as suspicious. This happens because the script monitors your hardware and uses a global keyboard shortcut. 
 > **It's not a virus:** Just click **"Allow app"** or add the file to your antivirus exclusions for it to work properly.
