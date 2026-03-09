@@ -2,3 +2,4 @@ psutil
 keyboard
 rich
 pyadl
+pyinstaller
