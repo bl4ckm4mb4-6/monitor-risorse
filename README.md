@@ -67,9 +67,48 @@ The file generated on your desktop will have a format similar to the following:
 For convenience, the project has been compiled into an executable file using **PyInstaller**. This allows you to start monitoring without having to manually install Python or any dependencies.
 
 ### How to use it:
-1. Download the `monitor_risorse.exe` file from the section [Releases](link-tua-release).
+1. Download the `monitor_risorse.exe` file from the section [Releases](https://github.com/bl4ckm4mb4-6/monitor-risorse/releases/).
 2. Run the executable by double-clicking (if your antivirus blocks it, read the note below).
 3. The log file will be automatically created on your Desktop.
 
-> **⚠️ Note on Antivirus:** When you first launch it, your antivirus may block the program or flag it as suspicious. This happens because the script monitors your hardware and uses a global keyboard shortcut. 
-> **It's not a virus:** Just click **"Allow app"** or add the file to your antivirus exclusions for it to work properly.
+
+> **⚠️ Note on Antivirus & False Positives:** Due to the nature of hardware monitoring and the implementation of global hotkeys, some security software may flag this application as a **false positive**. This is expected behavior for scripts that interact directly with system inputs and sensors. To ensure full functionality, you may need to add the executable to your antivirus exclusion list.
+
+
+## 🖥️ Compatibility
+**OS**: Windows 10 / 11 (64-bit)
+
+**Architecture**: x86_64
+
+**Hardware**: Optimized for **AMD GPUs**.
+
+
+_Note: If you are using a different GPU (NVIDIA/Intel), you will need to modify the source code to disable or adapt the GPU monitoring section before recompiling._
+
+
+## 🛠️ How to create the executable (.exe) yourself
+If you prefer to compile the script from source code for security or customization reasons, you can do so using **PyInstaller** which is already included in the `requirements.txt` file.
+
+### Procedure:
+
+**1. Install PyInstaller (if you downloaded the dependencies from `requirements.txt` you can skip step 1):**
+
+  Open Terminal and type:
+```bash
+    pip install pyinstaller
+```
+
+**2. Compile the script:**
+
+Open the project folder in the terminal, and run the command:
+```bash
+    pyinstaller --onefile --name "Monitor Risorse" --icon "monitor.ico" monitor_risorse.py
+```
+
+- `--onefile`: Create a single `.exe` file instead of a folder full of files.
+- `--name`: Give a name to the executable, so you can call it as you want.
+- `--icon`: Assign an icon to the executable. You can find mine in the repository, but you can replace it with your own.
+
+**3. Retrieve the file:**
+
+Once the process is complete, you'll find your executable file in the newly created `dist/` folder. A `build/` folder and a `.spec` file are also created, which you can delete without problems. You can then move the executable file to any folder you like.
