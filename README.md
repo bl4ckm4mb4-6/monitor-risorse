@@ -1,5 +1,7 @@
 # monitor-risorse
 A lightweight, text-based system monitor written in Python that tracks CPU, RAM, Disk, and GPU (AMD) usage, saving data in real time to a log file on the Desktop.
+> **Note on Language:** The user interface, variable names, code comments and file names are written in Italian.
+
 
 ## ✨ Functionality:
 - **Real-time Monitoring:** Track CPU and GPU usage percentages.
